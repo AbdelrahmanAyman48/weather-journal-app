@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    background: #7f848a; /* Light background for better readability */
+    font-family: 'Oswald', sans-serif; /* Consistent and modern font */
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background: #3b4a6b; /* Dark blue background for contrast */
+    color: #2b2727; /* White text for readability */
+    gap: 20px; /* Space between sections */
+}
+
+/* Headline Styles */
+.holder.headline {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f0d43a; /* Bright yellow for the headline */
+    text-align: center;
+}
+
+/* Input Section */
+.holder.zip, .holder.feel {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #22b2da; /* Bright blue background for input fields */
+    color: #413333; /* White text inside inputs */
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: #f23557; /* Bright red for a call-to-action */
+    color: #382b2b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 4px 5px rgba(36, 34, 34, 0.3);
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #d11c4e; /* Slightly darker red on hover */
+}
+
+/* Entry Section */
+.holder.entry {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(205, 207, 212, 0.7); /* Semi-transparent blue background */
+    color: #241e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(54, 46, 46, 0.2);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #f0d43a;
+}
+
+#entryHolder div {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #app {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .holder.headline {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
